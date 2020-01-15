@@ -1,0 +1,58 @@
+1.
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap github.com
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 15:59 UTC
+Nmap scan report for github.com (140.82.114.3)
+Host is up (0.017s latency).
+rDNS record for 140.82.114.3: lb-140-82-114-3-iad.github.com
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+9418/tcp open  git
+
+Nmap done: 1 IP address (1 host up) scanned in 23.85 seconds
+
+2.
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap -p 80 youtube.com
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 16:00 UTC
+Nmap scan report for youtube.com (172.217.1.14)
+Host is up (0.0017s latency).
+Other addresses for youtube.com (not scanned): 2607:f8b0:400b:80f::200e
+rDNS record for 172.217.1.14: iad23s25-in-f14.1e100.net
+
+PORT   STATE    SERVICE
+80/tcp filtered http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.56 seconds
+
+
+3.
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap -p 22-100 mail.com
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 16:01 UTC
+Nmap scan report for mail.com (74.208.232.28)
+Host is up (0.025s latency).
+rDNS record for 74.208.232.28: gmx.fr
+Not shown: 78 filtered ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 1.99 seconds
+
+
+4.
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap -f microsoft.com
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 16:02 UTC
+Nmap scan report for microsoft.com (13.77.161.179)
+Host is up (0.069s latency).
+Other addresses for microsoft.com (not scanned): 40.76.4.15 104.215.148.63 40.112.72.205 40.113.200.201
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 7.43 seconds

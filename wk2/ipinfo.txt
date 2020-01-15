@@ -1,0 +1,24 @@
+1.
+Domain Name: ipinfo.info
+IP Address: 104.24.97.159
+Geolocation: US (United States), N/A, N/A, N/A N/A
+
+2.
+Domain Name: godaddy.com
+IP Address: 208.109.192.70
+Geolocation: US (United States), AZ, Arizona, 85260 Scottsdale
+
+3.
+Domain Name: realtor.ca
+IP Address: 52.179.188.206
+Geolocation: US (United States), VA, Virginia, 23917 Boydton
+
+4.
+Domain Name: blackboard.com
+IP Address: 69.196.244.99
+Geolocation: US (United States), DC, District of Columbia, 20433 Washington
+
+5.
+Domain Name: ovh.ca
+IP Address: 213.186.33.5
+Geolocation: FR (France), N/A, N/A, N/A N/A
