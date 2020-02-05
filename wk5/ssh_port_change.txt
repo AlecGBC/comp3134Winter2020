@@ -1,0 +1,61 @@
+root@lamp-s-1vcpu-1gb-tor1-01:~# nano /etc/ssh/sshd_config
+root@lamp-s-1vcpu-1gb-tor1-01:~# sudo ufw allow 2222/tcp
+Rule added
+Rule added (v6)
+root@lamp-s-1vcpu-1gb-tor1-01:~# service sshd restart
+root@lamp-s-1vcpu-1gb-tor1-01:~# service sshd stop
+root@lamp-s-1vcpu-1gb-tor1-01:~# service sshd start
+
+---
+
+101012146@CLC406IT25 MINGW64 ~
+$ ssh root@138.197.156.199 -p 2222
+The authenticity of host '[138.197.156.199]:2222 ([138.197.156.199]:2222)' can't be established.
+ECDSA key fingerprint is SHA256:YjdNSCwJ8VWLdnIaIEGE5kLL9N6L6ziXwd9JhXqFwys.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[138.197.156.199]:2222' (ECDSA) to the list of known hosts.
+root@138.197.156.199's password:
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-74-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Feb  5 16:18:32 UTC 2020
+
+  System load:  0.01               Processes:           104
+  Usage of /:   10.2% of 24.06GB   Users logged in:     1
+  Memory usage: 38%                IP address for eth0: 138.197.156.199
+  Swap usage:   0%
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+64 packages can be updated.
+0 updates are security updates.
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's One-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP One-Click Quickstart guide: http://do.co/lamp1804#start
+ * Your LAMP website: http://138.197.156.199
+
+On the server:
+ * The default web root is located at /var/www/html
+ * The MySQL root password is saved in /root/.digitalocean_password
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   http://do.co/lamp1804#enable-https for more detail.
+
+For help and more information, visit http://do.co/lamp1804
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+Last login: Wed Feb  5 16:11:11 2020 from 198.96.85.104
+root@lamp-s-1vcpu-1gb-tor1-01:~#
