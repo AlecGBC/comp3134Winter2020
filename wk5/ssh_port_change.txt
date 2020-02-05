@@ -3,8 +3,6 @@ root@lamp-s-1vcpu-1gb-tor1-01:~# sudo ufw allow 2222/tcp
 Rule added
 Rule added (v6)
 root@lamp-s-1vcpu-1gb-tor1-01:~# service sshd restart
-root@lamp-s-1vcpu-1gb-tor1-01:~# service sshd stop
-root@lamp-s-1vcpu-1gb-tor1-01:~# service sshd start
 
 ---
 
